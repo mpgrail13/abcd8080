@@ -1,0 +1,12 @@
+[Unit]
+Description=Arp addresses
+[Service]
+User=root
+ExecStart=/home/ubuntu/abcd8080.sh
+StandardOutput=tty
+TTYPath=/dev/pts/0
+Restart=on-failure
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target
